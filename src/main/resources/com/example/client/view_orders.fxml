@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.OrdersWindowController">
+   <children>
+      <TableView fx:id="tableView_Products" editable="true" layoutY="1.0" prefHeight="232.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="id_product" editable="false" prefWidth="69.60003662109375" text="ID" />
+            <TableColumn fx:id="name_product" prefWidth="192.0" text="Name" />
+            <TableColumn fx:id="gender_product" prefWidth="145.5999755859375" text="Gender" />
+            <TableColumn fx:id="cost_product" prefWidth="92.79998779296875" text="Cost" />
+            <TableColumn fx:id="amount_product" prefWidth="100.0001220703125" text="Amount" />
+         </columns>
+      </TableView>
+      <Button fx:id="b_exit" layoutX="23.0" layoutY="254.0" mnemonicParsing="false" text="Закрыть" />
+      <Button fx:id="b_del_order" layoutX="109.0" layoutY="254.0" mnemonicParsing="false" text="Удалить" />
+   </children>
+</AnchorPane>
